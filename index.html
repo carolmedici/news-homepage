@@ -9,19 +9,33 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<script src="script.js"></script>
+
+</head>
 </head>
 
 <nav>
     <div class="logo"><img src="images/logo.svg" alt="Website logo"></div>
-   <ul>
-        <li><a href="#" target="_self" rel="next">Home</a></li>
-        <li><a href="#" target="_self" rel="next">New</a></li>
-        <li><a href="#" target="_self" rel="next">Popular</a></li>
-        <li><a href="#" target="_self" rel="next">Trending</a></li>
-        <li><a href="#" target="_self" rel="next">Categories</a></li>
-   </ul>
+   <div id="menu">
+       <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+      <nav class="nav" id="nav">
+        <ul>
+            <li><a  href="#">Home</a></li>
+            <li><a  href="#">New</a></li>
+            <li><a  href="#">Popular</a></li>
+            <li><a  href="#">Trending</a></li>
+            <li><a  href="#">Categories</a></li>
+       </ul>
+       
+   </div>
 </nav>
-
+<div class="menu-bg" id="menu-bg"></div>
 <body>
     <div class="page">
        
@@ -32,9 +46,13 @@
                     <h1>The Bright Future of Web 3.0?</h1>
                     <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
 
-                    <a href="#"><button>READ MORE</button></a>
+                    <a href="#" target="_self" rel="next"><button>READ MORE</button></a>
+
+
                 </div>
             </div>
+
+            
 
             <Aside>
                 <h2>New</h2>
@@ -104,5 +122,16 @@
             </div>
         </main>
     </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+    
 </body>
 </html>
