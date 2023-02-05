@@ -26,200 +26,6 @@
     font-size: 62.5%;
 }
 
-@media (max-width: 700px){
-    #menu {
-        z-index: 2;
-        background-color: white;
-        
-      }
-      
-      #menu-bar {
-        width: 4.5rem;
-        height: 4rem;
-        margin: 3rem 0 0 2rem;
-        cursor: pointer;
-        
-        
-      }
-      
-      .bar {
-        height: 5px;
-        width: 100%;
-        background-color: var(--accent-color);
-        display: block;
-        border-radius: 5px;
-        transition: 0.3s ease;
-        
-        
-      }
-      
-      #bar1 {
-        transform: translateY(-4px);
-      }
-      
-      #bar3 {
-        transform: translateY(4px);
-      }
-      
-      .nav {
-        transition: 0.3s ease;
-        display: none;
-        background-color: white;
-        
-      }
-      
-      .nav ul {
-        padding: 0 22px;
-      }
-      
-      .nav li {
-        list-style: none;
-        padding: 12px 0;
-      }
-      
-      .nav li a {
-        color: var(--titule-color);
-        font-size: 20px;
-        text-decoration: none;
-      }
-      
-      .nav li a:hover {
-        font-weight: bold;
-        color: var(--accent-titule-color);
-      }
-      
-      .menu-bg, #menu {
-        top: 0;
-        right: 0;
-        position: absolute;
-      }
-      
-      .menu-bg {
-        z-index: 1;
-        margin: 30px 0 20px 20px;
-        background: white;
-        transition: 0.3s ease;
-      }
-      
-      .change {
-        display: block;
-      }
-      
-      .change .bar {
-        background-color: var(--titule-color);
-      }
-      
-      .change #bar1 {
-        transform: translateY(4px) rotateZ(-45deg);
-      }
-      
-      .change #bar2 {
-        opacity: 0;
-      }
-      
-      .change #bar3 {
-        transform: translateY(-6px) rotateZ(45deg);
-      }
-      
-      
-}
-
-
-
-@media (min-width: 750px) {
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30rem;
-    margin-bottom: 4rem;
-    margin-top: 5rem;
-}
-
-
-ul{
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    gap: 3rem;
-    margin: 0;
-    padding: 0;
-    
-}
-ul li a{
-    font-family: var(--font);
-    color: var(--text-color);
-    font-size: 1.4rem;
-   
-}
-
-ul li a:hover{
-    font-weight: bold;
-    color: var(--accent-titule-color)
-}
-
-.page{
-    margin-right: 30rem;
-    margin-left: 30rem;
-    font-family: var(--font);
-}
-
-.web{
-    height: 22rem ;
-    width: 60rem;
-    position: absolute;
-    top: 15rem;
-;
-    
-}
-
-.text{
-    position: absolute;
-    left: 30rem;
-    margin-right: 5rem;
-    top: 38rem;
-    display: grid;
-    grid-gap: 2rem; 
-    grid-template-columns: 1.5fr 2fr;
-    width: 60rem;
-    
-}
-
-.text h1{
-    grid-column-start: 1;
-    font-family: var(--font);
-    font-weight: bolder;
-    font-size: 4.5rem;
-    line-height: 4.2rem;
-}
-
-.text p {
-    grid-column-start: 2;
-    font-size: 1.4rem;
-    text-align: justify;
-    color: var(--text-color);
-    margin-left: 0;
-}
-
-.text button{
-    grid-column-start: 2;
-    position: absolute;
-    left: 2px;
-    top: 9rem;
-    width: 15rem;
-    padding: 1.2rem;
-    background-color: var(--buttom-color);
-    color: white;
-    border-style: none;
-    letter-spacing: 2px;
-
-}
-
-.text button:hover{
-    background-color: var(--titule-color);
-   
-}
 
 a{
     list-style: none;
@@ -227,16 +33,6 @@ a{
 
 }
 
-aside{
-    position: absolute;
-    left: 94rem;
-    top: 15rem;
-    background-color: var(--accent-color);
-    color: white;
-    padding: 3rem;
-    width: 28rem;
-    padding-bottom: 0;
-}
 
 h2{
     color: var(--accent-titule-color);
@@ -272,6 +68,343 @@ aside p {
     
 }
 
+
+@media (max-width: 70rem){
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 4rem;
+        margin-bottom: 4rem;
+        margin-top: 5rem;
+    }
+
+
+    #menu {
+        z-index: 2;
+        background-color: white;
+      }
+      
+      #menu-bar {
+        width: 4.5rem;
+        height: 4rem;
+        margin: 6rem 4rem 0 2rem;
+        cursor: pointer;
+      }
+      
+      .bar {
+        height: 5px;
+        width: 100%;
+        background-color: var(--accent-color);
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+     }
+      
+      #bar1 {
+        transform: translateY(-4px);
+      }
+      
+      #bar3 {
+        transform: translateY(4px);
+      }
+      
+      .nav {
+        transition: 0.3s ease;
+        display: none;
+        background-color: white;
+        
+      }
+      
+      .nav ul {
+        width: 20rem;
+        height: 100rem;
+      }
+      
+      .nav li {
+        list-style: none;
+        padding: 12px 0;
+        
+      }
+      
+      .nav li a {
+        color: var(--titule-color);
+        font-size: 2.5rem;
+        text-decoration: none;
+        
+      }
+      
+      .nav li a:hover {
+        font-weight: bold;
+        color: var(--accent-titule-color);
+      }
+      
+      .menu-bg, #menu {
+        top: 0;
+        right: 0;
+        position: absolute;
+      }
+      
+      .menu-bg {
+        z-index: 1;
+        margin: 30px 0 20px 20px;
+        background: white;
+        transition: 0.3s ease;
+       
+      }
+      
+      .change {
+        display: block;
+      }
+      
+      .change .bar {
+        background-color: var(--titule-color);
+        
+      }
+      
+      .change #bar1 {
+        transform: translateY(4px) rotateZ(-45deg);
+      }
+      
+      .change #bar2 {
+        opacity: 0;
+      }
+      
+      .change #bar3 {
+        transform: translateY(-6px) rotateZ(45deg);
+      }
+      
+      
+      .web{
+        margin: auto;
+        display: block;
+       
+    }
+
+    
+      
+    .text h1{
+        font-family: var(--font);
+        font-weight: bolder;
+        font-size: 4.5rem;
+        line-height: 5rem;
+        margin: 2rem 5rem;
+    }
+
+    .text p {
+        font-size: 1.6rem;
+        text-align: justify;
+        line-height: 2.2rem;
+        color: var(--text-color);
+        margin: 2rem 5rem;
+    }
+
+    .text button{
+        margin-left: 5rem;
+        width: 15rem;
+        padding: 1.2rem;
+        background-color: var(--buttom-color);
+        color: white;
+        border-style: none;
+        letter-spacing: 2px;
+    
+    }
+    
+    .text button:hover{
+        background-color: var(--titule-color);
+       
+    }
+
+   
+    
+    aside{
+        margin: 5rem auto;
+        background-color: var(--accent-color);
+        color: white;
+        padding: 3rem;
+        width: 40rem;
+        padding-bottom: 0;
+    }
+         
+    
+    .new1{
+        display: grid;
+        grid-template-columns: 2 ;
+        margin-left: 4rem;
+    }
+    
+    .new2{
+        display: grid;
+        grid-template-columns: 2 ;
+        margin-left: 4rem;
+    }
+    
+    .new3{
+        display: grid;
+        grid-template-columns: 2 ;
+        margin-left: 4rem;
+    }
+    .new1 img{
+        grid-column-start: 1;
+        width: 7.5rem;
+        
+    }
+    
+    h4, h5, p{
+        grid-column-start: 2;
+        margin-left: 9.6rem;
+        position: relative;
+    
+        
+    }
+    
+    h4{
+        color: var(--text-number);
+        font-size: 2.5rem;
+        font-weight: bolder;
+        top: -10rem;
+       }
+    
+    h5{
+        top: -9rem;
+        font-size: 1.5rem ;
+        font-weight: bolder;
+        color: var(--titule-color);
+    }
+    
+    .newsletter p{
+        top: -7.5rem;
+        color: var(--text-color);
+        font-size: 1.2rem;
+    }
+
+    .new2 img{
+        grid-column-start: 1;
+        width: 7.5rem;
+        
+    }
+    
+    .new3 img{
+        grid-column-start: 1;
+        width: 7.5rem;
+    }
+    
+    h5:hover{
+        color: var(--accent-titule-color);
+    }
+    
+    
+}
+
+
+
+@media (min-width: 72rem) {
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30rem;
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+}
+
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 3rem;
+    padding: 0;
+    margin-left: 20rem;
+    
+}
+ul li a{
+    font-family: var(--font);
+    color: var(--text-color);
+    font-size: 1.4rem;
+   
+}
+
+ul li a:hover{
+    font-weight: bold;
+    color: var(--accent-titule-color)
+}
+
+.page{
+    margin-right: 30rem;
+    margin-left: 30rem;
+    font-family: var(--font);
+}
+
+.web{
+    
+    position: absolute;
+    top: 15rem;
+   
+}
+
+.text{
+    position: absolute;
+    left: 30rem;
+    margin-right: 5rem;
+    top: 41rem;
+    display: grid;
+    grid-gap: 2rem; 
+    grid-template-columns: 1.5fr 2fr;
+    width: 60rem;
+    
+}
+
+.text h1{
+    grid-column-start: 1;
+    font-family: var(--font);
+    font-weight: 800;
+    font-size: 4.5rem;
+    line-height: 4.2rem;
+}
+
+.text p {
+    grid-column-start: 2;
+    font-size: 1.4rem;
+    text-align: justify;
+    color: var(--text-color);
+    margin-left: 0;
+}
+
+.text button{
+    grid-column-start: 2;
+    position: absolute;
+    left: 2px;
+    top: 9rem;
+    width: 15rem;
+    padding: 1.2rem;
+    background-color: var(--buttom-color);
+    color: white;
+    border-style: none;
+    letter-spacing: 2px;
+
+}
+
+.text button:hover{
+    background-color: var(--titule-color);
+   
+}
+
+
+aside{
+    position: absolute;
+    left: 94rem;
+    top: 15rem;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 3rem;
+    width: 28rem;
+    padding-bottom: 0;
+}
+
+
+
 .newsletter{
     position: absolute;
     top: 57rem;
@@ -290,14 +423,14 @@ aside p {
     grid-column-start: 2;
     display: grid;
     grid-template-columns: 2 ;
-    margin-left: 7rem;
+    margin-left: 6rem;
 }
 
 .new3{
     grid-column-start: 3;
     display: grid;
     grid-template-columns: 2 ;
-    margin-left: 7rem;
+    margin-left: 6rem;
 }
 .new1 img{
     grid-column-start: 1;
@@ -309,6 +442,7 @@ h4, h5, p{
     grid-column-start: 2;
     margin-left: 9.6rem;
     position: relative;
+    font-family: var(--font);
 
     
 }
@@ -324,6 +458,7 @@ h5{
     top: -9rem;
     font-size: 1.5rem ;
     font-weight: bolder;
+    color: var(--titule-color);
 }
 
 .newsletter p{

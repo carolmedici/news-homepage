@@ -17,7 +17,7 @@
 </head>
 
 <nav>
-    <div class="logo"><img src="images/logo.svg" alt="Website logo"></div>
+    <div class="logo"><img src="images/logo.png" alt="Website logo"></div>
    <div id="menu">
        <div id="menu-bar" onclick="menuOnClick()">
         <div id="bar1" class="bar"></div>
@@ -41,7 +41,10 @@
        
         <main>
             <div id="principal">
-                <img class="web" src="images/image-web-3-desktop.jpg" alt="Image with different geometric shapes colored and fitted together">
+                <picture>
+                    <source  media="(max-width: 70rem)" srcset="images/image-web-3-mobile.jpg" type="image/jpg">
+                    <img class="web" src="images/image-web-3-desktop.jpg" alt="Image with different geometric shapes colored and fitted together">
+                </picture>
                 <div class="text">
                     <h1>The Bright Future of Web 3.0?</h1>
                     <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
