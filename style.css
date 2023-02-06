@@ -26,6 +26,30 @@
     font-size: 62.5%;
 }
 
+body{
+    font-family: var(--font);
+}
+.text h1{
+    font-weight: 800;
+    font-size: 4.5rem;
+    line-height: 4.2rem;
+    color: var(--titule-color);
+}
+
+.text p{
+    font-size: 1.4rem;
+    text-align: justify;
+    color: var(--text-color);
+}
+
+.text button{
+    width: 15rem;
+    padding: 1.2rem;
+    background-color: var(--buttom-color);
+    color: white;
+    border-style: none;
+    letter-spacing: 2px;
+}
 
 a{
     list-style: none;
@@ -46,11 +70,18 @@ a h3:hover{
 }
 
 
-
 h3{
     font-size: 1.5rem;
     padding-bottom: 1rem;
     color: white;
+}
+
+aside{
+    background-color: var(--accent-color);
+    color: white;
+    padding: 3rem;
+    width: 28rem;
+    padding-bottom: 0;
 }
 
 aside p {
@@ -63,11 +94,20 @@ aside p {
     border: 0.1px solid var(--line);
     width: 22rem;
     margin-bottom: 3rem;
-   border-width: 0.1px;
+    border-width: 0.1px;
    
     
 }
 
+.new1 img:hover, .new2 img:hover, .new3 img:hover{
+    transform: scale(1.3);
+    opacity: 0.5; 
+}
+
+.web:hover{
+    transform: scale(1.1);
+    opacity: 0.5; 
+}
 
 @media (max-width: 70rem){
 
@@ -83,16 +123,16 @@ aside p {
     #menu {
         z-index: 2;
         background-color: white;
-      }
+    }
       
-      #menu-bar {
+    #menu-bar {
         width: 4.5rem;
         height: 4rem;
         margin: 6rem 4rem 0 2rem;
         cursor: pointer;
-      }
+    }
       
-      .bar {
+    .bar {
         height: 5px;
         width: 100%;
         background-color: var(--accent-color);
@@ -101,132 +141,106 @@ aside p {
         transition: 0.3s ease;
      }
       
-      #bar1 {
+    #bar1 {
         transform: translateY(-4px);
-      }
+    }
       
-      #bar3 {
+    #bar3 {
         transform: translateY(4px);
-      }
+    }
       
-      .nav {
+    .nav {
         transition: 0.3s ease;
         display: none;
         background-color: white;
-        
-      }
+    }
       
-      .nav ul {
+    .nav ul {
         width: 20rem;
         height: 100rem;
-      }
+    }
       
-      .nav li {
+    .nav li {
         list-style: none;
-        padding: 12px 0;
-        
-      }
+        padding: 1.2rem 0;        
+    }
       
-      .nav li a {
+    .nav li a {
         color: var(--titule-color);
         font-size: 2.5rem;
-        text-decoration: none;
-        
-      }
+        text-decoration: none;        
+    }
       
-      .nav li a:hover {
+    .nav li a:hover {
         font-weight: bold;
         color: var(--accent-titule-color);
-      }
+    }
       
-      .menu-bg, #menu {
+    .menu-bg, #menu {
         top: 0;
         right: 0;
         position: absolute;
-      }
+    }
       
-      .menu-bg {
+    .menu-bg {
         z-index: 1;
-        margin: 30px 0 20px 20px;
+        margin: 3rem 0 2rem 2rem;
         background: white;
         transition: 0.3s ease;
-       
-      }
-      
-      .change {
-        display: block;
-      }
-      
-      .change .bar {
-        background-color: var(--titule-color);
-        
-      }
-      
-      .change #bar1 {
-        transform: translateY(4px) rotateZ(-45deg);
-      }
-      
-      .change #bar2 {
-        opacity: 0;
-      }
-      
-      .change #bar3 {
-        transform: translateY(-6px) rotateZ(45deg);
-      }
-      
-      
-      .web{
-        margin: auto;
-        display: block;
-       
     }
-
-    
       
+    .change {
+        display: block;
+    }
+      
+    .change .bar {
+        background-color: var(--titule-color);
+    }
+      
+    .change #bar1 {
+        transform: translateY(4px) rotateZ(-45deg);
+    }
+      
+    .change #bar2 {
+        opacity: 0;
+    }
+      
+    .change #bar3 {
+        transform: translateY(-6px) rotateZ(45deg);
+    }
+      
+      
+    .web{
+        margin: auto;
+        display: block;       
+    }
+          
     .text h1{
-        font-family: var(--font);
-        font-weight: bolder;
-        font-size: 4.5rem;
-        line-height: 5rem;
-        margin: 2rem 5rem;
+      margin: 2rem 4.2rem;
+      line-height: 4.5rem;
+      width: 35rem;
     }
 
     .text p {
-        font-size: 1.6rem;
-        text-align: justify;
         line-height: 2.2rem;
-        color: var(--text-color);
-        margin: 2rem 5rem;
+        margin: 2rem 4.2rem;       
     }
 
     .text button{
-        margin-left: 5rem;
-        width: 15rem;
-        padding: 1.2rem;
-        background-color: var(--buttom-color);
-        color: white;
-        border-style: none;
-        letter-spacing: 2px;
-    
+        margin-left: 4.2rem;
+           
     }
     
     .text button:hover{
         background-color: var(--titule-color);
        
     }
-
-   
-    
+       
     aside{
         margin: 5rem auto;
-        background-color: var(--accent-color);
-        color: white;
-        padding: 3rem;
-        width: 40rem;
-        padding-bottom: 0;
+        width: 40rem;       
     }
-         
-    
+             
     .new1{
         display: grid;
         grid-template-columns: 2 ;
@@ -254,7 +268,7 @@ aside p {
         grid-column-start: 2;
         margin-left: 9.6rem;
         position: relative;
-    
+       
         
     }
     
@@ -287,7 +301,10 @@ aside p {
     .new3 img{
         grid-column-start: 1;
         width: 7.5rem;
+        
     }
+
+    
     
     h5:hover{
         color: var(--accent-titule-color);
@@ -320,11 +337,12 @@ ul{
     
 }
 ul li a{
-    font-family: var(--font);
+    
     color: var(--text-color);
     font-size: 1.4rem;
    
 }
+
 
 ul li a:hover{
     font-weight: bold;
@@ -334,7 +352,7 @@ ul li a:hover{
 .page{
     margin-right: 30rem;
     margin-left: 30rem;
-    font-family: var(--font);
+    
 }
 
 .web{
@@ -358,17 +376,11 @@ ul li a:hover{
 
 .text h1{
     grid-column-start: 1;
-    font-family: var(--font);
-    font-weight: 800;
-    font-size: 4.5rem;
-    line-height: 4.2rem;
+    
 }
 
 .text p {
     grid-column-start: 2;
-    font-size: 1.4rem;
-    text-align: justify;
-    color: var(--text-color);
     margin-left: 0;
 }
 
@@ -377,40 +389,23 @@ ul li a:hover{
     position: absolute;
     left: 2px;
     top: 9rem;
-    width: 15rem;
-    padding: 1.2rem;
-    background-color: var(--buttom-color);
-    color: white;
-    border-style: none;
-    letter-spacing: 2px;
-
 }
 
 .text button:hover{
-    background-color: var(--titule-color);
-   
+    background-color: var(--titule-color);   
 }
-
 
 aside{
     position: absolute;
     left: 94rem;
-    top: 15rem;
-    background-color: var(--accent-color);
-    color: white;
-    padding: 3rem;
-    width: 28rem;
-    padding-bottom: 0;
+    top: 15rem;    
 }
-
-
 
 .newsletter{
     position: absolute;
     top: 57rem;
     display: grid;
-    grid-template-columns: 3;
-    
+    grid-template-columns: 3;    
 }
 
 .new1{
@@ -432,6 +427,7 @@ aside{
     grid-template-columns: 2 ;
     margin-left: 6rem;
 }
+
 .new1 img{
     grid-column-start: 1;
     width: 7.5rem;
@@ -467,10 +463,10 @@ h5{
     color: var(--text-color);
     font-size: 1.1rem;
 }
+
 .new2 img{
     grid-column-start: 1;
-    width: 7.5rem;
-    
+    width: 7.5rem;    
 }
 
 .new3 img{
@@ -481,7 +477,6 @@ h5{
 h5:hover{
     color: var(--accent-titule-color);
 }
-
 
 
 }
