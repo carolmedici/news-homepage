@@ -66,7 +66,7 @@ h2{
 }
 
 a h3:hover{
-    color: var(--accent-titule-color)
+    color: var(--accent-titule-color);
 }
 
 
@@ -346,7 +346,7 @@ ul li a{
 
 ul li a:hover{
     font-weight: bold;
-    color: var(--accent-titule-color)
+    color: var(--accent-titule-color);
 }
 
 .page{
